@@ -1,0 +1,61 @@
+#include <iostream>
+
+int main() {  
+
+ 
+
+  //This programs function calculates the difference of inputed weight on different planets
+
+  double weight = 0;
+  int planet = 0;
+  
+  std::cout << "Hello, I calculate how much you would weigh on other planets.\nI will ask you for some personal information.\nPlease keep in mind, you are beautiful the way you are.\nHere we go.\n\n";
+  
+  //This block will get weight information
+  std::cout << "How much do you weigh on earth (lbs)?\n";
+  std::cin >> weight;
+  
+  //This block will get planet information
+  std::cout << "\n\nWhich planet would you like to to know your weight on?\nPlease enter the corresponding number.\n1       Mercury\n2 	Venus\n3 	Mars\n4 	Jupiter\n5 	Saturn\n6 	Uranus\n7 	Neptune\n";
+  std::cin >> planet;
+
+  //This next bit is calculating planet weight
+
+  double venus = weight * 0.91;
+  double mercury = weight * 0.38;
+  double mars = weight * 0.38;
+  double jupiter = weight * 2.34;
+  double saturn = weight * 1.06;
+  double uranus = weight * 0.92;
+  double neptune = weight * 1.19;
+
+  switch (planet) {
+  case 1:
+    std::cout << mercury << " (lbs)\n";
+    break;
+  case 2:
+    std::cout << venus << " (lbs)\n";
+    break; 
+  case 3:
+    std::cout << mars << " (lbs)\n";
+    break;
+  case 4:
+    std::cout << jupiter << " (lbs)\n";
+    break;
+  case 5:
+    std::cout << saturn << " (lbs)\n";
+    break;
+  case 6:
+    std::cout << uranus << " (lbs)\n";
+    break;
+  case 7:
+    std::cout << neptune << " (lbs)\n";
+  default:
+    std::cout << "Invalid\n";
+    break;
+
+     }
+
+
+
+}
